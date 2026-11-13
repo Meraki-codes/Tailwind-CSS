@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice 3</title>
+    <link rel="stylesheet" href="../src/output.css" />
+  </head>
+  <body class="bg-gray-100">
+    <nav class="sticky top-0 bg-white shadow-md">
+      <div
+        class="flex items-center justify-between max-w-6xl mx-auto px-6 py-4"
+      >
+        <a href="#" class="text-purple-600 font-bold text-2xl">Fioré</a>
+
+        <div
+          class="hidden md:flex gap-8 items-center text-gray-600 font-medium"
+        >
+          <a href="#" class="hover:text-purple-600">Home</a>
+          <a href="#" class="hover:text-purple-600">Work</a>
+          <a href="#" class="hover:text-purple-600">About</a>
+          <a href="#" class="hover:text-purple-600">Contact</a>
+        </div>
+        <button
+          class="hidden md:block bg-purple-600 rounded-lg text-white px-5 py-2 font-medium hover:bg-purple-700"
+        >
+          Hire Me
+        </button>
+
+        <!-- Mobile Version -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-3xl text-gray-700 cursor-pointer"
+        >
+          &#9776;
+        </button>
+      </div>
+
+      <div
+        id="menu"
+        class="hidden md:hidden border-t border-gray-200 px-6 py-4 space-y-4 text-gray-600 font-medium"
+      >
+        <a href="#" class="block hover:text-purple-600 text-center">Home</a>
+        <a href="#" class="block hover:text-purple-600 text-center">Work</a>
+        <a href="#" class="block hover:text-purple-600 text-center">About</a>
+        <a href="#" class="block hover:text-purple-600 text-center">Contact</a>
+
+        <button
+          class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 cursor-pointer"
+        >
+          Hire Me
+        </button>
+      </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-6 space-y-6">
+      <div class="h-64 rounded-2xl shadow bg-white"></div>
+      <div class="h-64 rounded-2xl shadow bg-white"></div>
+      <div class="h-64 rounded-2xl shadow bg-white"></div>
+    </main>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
