@@ -282,6 +282,9 @@
   .max-w-6xl {
     max-width: var(--container-6xl);
   }
+  .flex-1 {
+    flex: 1;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
@@ -536,11 +539,20 @@
       --tw-translate-y: calc(var(--spacing) * -2);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    .hover\:bg-gray-300:hover {
+      background-color: var(--color-gray-300);
+    }
+    .hover\:bg-gray-500:hover {
+      background-color: var(--color-gray-500);
+    }
     .hover\:bg-purple-50:hover {
       background-color: var(--color-purple-50);
     }
     .hover\:bg-purple-200:hover {
       background-color: var(--color-purple-200);
+    }
+    .hover\:bg-purple-400:hover {
+      background-color: var(--color-purple-400);
     }
     .hover\:bg-purple-700:hover {
       background-color: var(--color-purple-700);
